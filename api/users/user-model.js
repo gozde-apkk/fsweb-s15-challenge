@@ -8,7 +8,7 @@ const getById = (id) =>{
 }
 
 const getByFilter = (filter) =>{
-    return db("users").where(filter)
+    return db("users").where(filter).first();
 }
 
 const insert =async (user) =>{
